@@ -8,7 +8,8 @@ import Footer from './Components/Footer';
 const dishes = [
   'Macaroni and Cheese',
   'Garlic Butter Salmon',
-  'Steak and Potatoes'
+  'Steak and Potatoes',
+  'Pulled Pork and Coleslaw'
 ]
 
 function App() {
