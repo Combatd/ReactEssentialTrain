@@ -11,7 +11,7 @@ export default function main(props) {
     return (
         <section>
             <p>We serve the most {props.adjective} food around.</p>
-            <ul  style={ {textAlign: 'left'} }>
+            <ul style={ {textAlign: 'left'} }>
                 { dishObjects.map((dish) => {
                     return <li key={dish.id}> {dish.title} </li>
                 }) }
