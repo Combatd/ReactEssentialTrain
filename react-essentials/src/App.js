@@ -10,7 +10,7 @@ function App() {
     <div className="App">
       <Header name="Cindy" />
       <Main adjective="amazing" />
-      <Footer />
+      <Footer year={ new Date().getFullYear() } />
     </div>
   );
 }

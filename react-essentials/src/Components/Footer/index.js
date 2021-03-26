@@ -1,7 +1,7 @@
 import { React, Component } from 'react';
 
-export default function Footer() {
+export default function Footer(props) {
     return (
-        <p>It's true.</p>
+        <p>Copyright {props.year}</p>
     );
 }
