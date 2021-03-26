@@ -1,9 +1,9 @@
 import React from 'react';
 
-export default function main() {
+export default function main(props) {
     return (
         <section>
-            <p>We serve the most delicious food around.</p>
+            <p>We serve the most {props.adjective} food around.</p>
         </section>
     )
 }
