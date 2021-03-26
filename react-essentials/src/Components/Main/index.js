@@ -11,7 +11,7 @@ export default function main(props) {
     return (
         <section>
             <p>We serve the most {props.adjective} food around.</p>
-            <img src="https://i.redd.it/flf4unxcf8x51.jpg" />
+            <img src="https://i.redd.it/flf4unxcf8x51.jpg" alt="takobell, a hololive parody of taco bell logo" />
             <ul style={ {textAlign: 'left'} }>
                 { dishObjects.map((dish) => {
                     return <li key={dish.id}> {dish.title} </li>
