@@ -5,6 +5,6 @@ import "./index.css";
 import App from './App.js';
 
 ReactDOM.render(
-  <App authorized={true} />,
+  <App />,
   document.getElementById("root")
 );
