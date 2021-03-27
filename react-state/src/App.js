@@ -28,7 +28,7 @@ function App() {
   //   setSecondary('Crabby');
   // }
 
-  // const secondaryTired = () => {
+  // const secondaryTired = () => {s
   //   setSecondary('Tired');
   // }
 
