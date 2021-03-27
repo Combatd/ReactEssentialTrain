@@ -48,7 +48,13 @@ function App({ login }) {
   // }
 
   if (data) {
-    return <div>{JSON.stringify(data)}</div>
+    return (
+    <div>
+      <h1>{data.name}</h1>
+      <h2>{data.location}</h2>
+      <img alt={data.login} src={data.avatar_url} />
+    </div>
+    );
   }
 
   return (
