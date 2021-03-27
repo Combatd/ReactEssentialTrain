@@ -1,48 +1,47 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useReducer } from "react";
 import "./App.css";
 
 
 function App() {
-  const [emotion, setEmotion] = useState('Happy');
-  const [secondary, setSecondary] = useState('Tired');
+  // const [emotion, setEmotion] = useState('Happy');
+  // const [secondary, setSecondary] = useState('Tired');
 
-  useEffect(() => {
-    console.log(`It's ${secondary} around here!`);
-  });
+  const [checked, toggle] = useReducer((checked) => !checked, false);
 
-  const frustrate = () => {
-    setEmotion('frustrated');
-  }
+  // useEffect(() => {
+  //   console.log(`It's ${secondary} around here!`);
+  // });
 
-  const enthuse = () => {
-    setEmotion('Enthusiastic')
-  }
+  // const frustrate = () => {
+  //   setEmotion('frustrated');
+  // }
 
-  const happy = () => {
-    setEmotion('Happy')
-  }
+  // const enthuse = () => {
+  //   setEmotion('Enthusiastic')
+  // }
 
-  const secondaryCrabby = () => {
-    setSecondary('Crabby');
-  }
+  // const happy = () => {
+  //   setEmotion('Happy')
+  // }
 
-  const secondaryTired = () => {
-    setSecondary('Tired');
-  }
+  // const secondaryCrabby = () => {
+  //   setSecondary('Crabby');
+  // }
 
-  const secondaryPlacid = () => {
-    setSecondary('Placid');
-  }
+  // const secondaryTired = () => {
+  //   setSecondary('Tired');
+  // }
+
+  // const secondaryPlacid = () => {
+  //   setSecondary('Placid');
+  // }
 
   return (
     <>
-      <h1>Current emotion is {emotion} and {secondary}</h1>
-      <button onClick={frustrate}>frustrate</button>
-      <button onClick={enthuse}>enthuse</button>
-      <button onClick={happy}>happy</button>
-      <button onClick={secondaryCrabby}>crabby</button>
-      <button onClick={secondaryTired}>tired</button>
-      <button onClick={secondaryPlacid}>placid</button>
+      <input type="checkbox" value={checked} onChange={toggle} />
+      <p>
+        { checked ? "checked" : "not checked" }
+      </p>
     </>
   );
 }
